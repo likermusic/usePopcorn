@@ -87,7 +87,7 @@ function App() {
     setErrorMovie(null);
     setLoadingMovie(true);
     setMovieDescription(null);
-    fetch(`http://www.omdbapi.com/?apikey=${KEY}&i=${imdbID}`)
+    fetch(`https://www.omdbapi.com/?apikey=${KEY}&i=${imdbID}`)
       .then((resp) => {
         if (!resp.ok) throw new Error("Response error 😑");
         return resp.json();
