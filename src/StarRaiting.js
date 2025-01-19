@@ -32,7 +32,6 @@ function StarRaiting({ fillColor = "gold", border = "gold", onSetRating }) {
       {Array.from({ length: 10 }, (_, ind) => (
         <Star
           key={ind}
-          s
           onMarked={() => handleMark(ind)}
           onHover={() => handleHover(ind)}
           onLeave={() => setTempRating(0)}
